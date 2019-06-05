@@ -12,3 +12,12 @@ function nowServing(line) {
     return "Currently serving " + name + ".";
   }
 }
+
+function currentLine(line) {
+  if (line.length === 0) {
+    return `This line is currently empty.`;
+  } else {
+    for (var i = 0; i < line.length; i++);
+    
+  }
+}
