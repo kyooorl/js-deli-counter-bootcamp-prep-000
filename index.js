@@ -17,7 +17,10 @@ function currentLine(line) {
   if (line.length === 0) {
     return `This line is currently empty.`;
   } else {
-    for (var i = 0; i < line.length; i++);
-    
+    var array = [];
+    for (var i = 0; i < line.length; i++) {
+      array.push(`${i+1}. ${array[i]}`);
+    }
+  return `The line is currently: ` + array;  
   }
 }
