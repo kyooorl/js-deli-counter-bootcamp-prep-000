@@ -15,16 +15,14 @@ function nowServing(katzDeliLine) {
   }
 }
 
-
-function currentLine(katzDeliLine) {
-    var line = [];
-    if (katzDeliLine.length === 0) {
-      return "The line is currently empty.";
-    } else {
-      for(var i = 0; i < katzDeliLine.length; i++) {
-        line += (i + 1) + ". " + katzDeliLine[i] + ", ";
-      }
-      line = line.slice(0, line.length-2);
-      return "The line is currently: " + line;
+var line = [];
+function currentLine(line) {
+  if (line.length === 0) {
+    return `The is currently empty.`;
+  } else {
+    for (var i = 0; i < line.length; i++) {
+      line.push(`${i+1}. ${line[i]}`);
     }
+  return `The line is currently: ` + line;
+  }
 }
